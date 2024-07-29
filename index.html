@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>Bhargav Sai Maddukuri</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Developer</p>
+            <h1>Hi, I'm <span>Bhargav</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profile picture (4).png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Master’s graduate in Information Systems and Technology from the University of North Texas, with hands-on experience in software development and project engineering. My background includes working as a Project Engineer at Wipro and interning at Lexron Technologies, where I honed my skills in Java, Python, C++, and full-stack development.<br> </p><br>Throughout my career, I’ve demonstrated proficiency in implementing Agile methodologies and developing solutions that exceed client expectations. I’ve worked on diverse projects, including a multilingual chatbot, a mobile cost prediction model, and an online bookstore website, showcasing my ability to adapt and innovate.<br>  </p><br>I am currently exploring new opportunities in software development and technology, where I can leverage my technical skills and project management experience to contribute to impactful solutions. I am passionate about staying updated with the latest industry trends and am committed to continuous learning and professional growth.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Technologies</span><br>HTML5, CSS, JavaScript, jQuery, React, Bootstrap</li>
+                        <li><span>Back-End Development</span><br>Java, C, C++, Python, C#, MySQL</li>
+                        <li><span>Web Development</span><br>Designing and developing user-friendly web interfaces and applications.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2021 - Aug 2022</span><br>Project Engineer at Wipro Ltd</li>
+                        <li><span>Mar 2021 - Sep 2021</span><br>Intern at Lexron Technologies</li>        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>University of North Texas, TX, USA<br>M.S in Information Systems & Technology</li>
+                        <li><span>2021</span><br>Gitam Universiy, India<br>B.Tech - Computer Science & Engineering</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services----------------
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Designer.jpeg">
+                <div class="layer">
+                    <h3>Multilingual Chatbot</h3>
+                    <p>• Developed a multilingual chatbot utilizing Angular for the frontend and Java Spring Boot microservices for the backend, with 
+                        deployment facilitated through Jenkins CI/CD pipelines and Docker containers on Google Cloud Platform.</p><br>
+                      <p>• The chatbot assists users in accessing information in their native language through text and audio interaction during interactions 
+                        with support agents or bots.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (1).jpeg">
+                <div class="layer">
+                    <h3>Online Bookstore Website</h3>
+                    <p>• Implemented user-friendly features such as user registration, browsing and searching for books, adding books to the shopping cart, 
+                         and secure online payment processing.<br>
+                 <p><br>• Utilized HTML, CSS, and JavaScript for the front-end design and functionality</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (2).jpeg">
+                <div class="layer">
+                    <h3>Mobile Cost Prediction</h3>
+                    <p>• Developed a predictive model to estimate the cost of mobile devices based on various features and specifications.</p>
+                    <br><p>    • Utilized machine learning techniques, including Linear Regression and k-Nearest Neighbours (k-NN), to process and analyse a
+                        dataset of mobile phone specifications.</p>
+
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> bhargav0940@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (940) 843-3108</p>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>LinkedIn Icon</title>
+                        <!-- Include Font Awesome CSS -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                    </head>
+                    <body>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/bhargav-maddukuri-7676a21b1/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </body>
+                    </html>
+                <a href="images/Bhargav_01.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <!--<div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>-->
+        </div>
+    </div>
+   
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
